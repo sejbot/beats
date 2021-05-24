@@ -18,6 +18,9 @@ processors:
 - json:
     field: azure.activitylogs.identity
     if: 'ctx.azure?.activitylogs?.identity instanceof String'
+- json:
+    field: azure.activitylogs.properties
+    if: 'ctx.azure?.activitylogs?.properties instanceof String'
 - date:
     field: azure.activitylogs.time
     target_field: '@timestamp'

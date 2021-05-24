@@ -1,0 +1,42 @@
+[
+  {
+    "fileset.name": "activitylogs",
+    "tags": [
+      "forwarded"
+    ],
+    "cloud.provider": "azure",
+    "input.type": "azure-eventhub",
+    "@timestamp": "2021-05-03T07:35:54.177Z",
+    "service.type": "azure",
+    "event": {
+      "event.action": "Delete subscription.",
+      "event.ingested": "2021-05-21T11:51:58.599978Z",
+      "event.original": "{\"category\":\"Security\",\"correlationId\":\"86da75ce-c080-4551-b77a-caa2deb2de9e\",\"description\":\"Microsoft system deleted the 1190e086-37bb-4ce6-b4ca-950b49785e54 subscription.\",\"identity\":\"{\\\"authorization\\\":{},\\\"claims\\\":{\\\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn\\\":\\\"microsoft system\\\"}}\",\"operationName\":\"Delete subscription.\",\"properties\":\"{ \\\"message\\\": \\\"Microsoft system deleted the 1190e086-37bb-4ce6-b4ca-950b49785e54 subscription.\\\"}\",\"resourceId\":\"/SUBSCRIPTIONS/1190E086-37BB-4CE6-B4CA-950B49785E54\",\"resultType\":\"Succeeded\",\"time\":\"2021-05-03T07:35:54.1778906Z\"}",
+      "dataset": "azure.activitylogs",
+      "kind": "event",
+      "module": "azure"
+    },
+    "azure": {
+      "resource": {
+        "id": "/SUBSCRIPTIONS/1190E086-37BB-4CE6-B4CA-950B49785E54"
+      },
+      "correlation_id": "86da75ce-c080-4551-b77a-caa2deb2de9e",
+      "activitylogs": {
+        "operation_name": "Delete subscription.",
+        "result_type": "Succeeded",
+        "identity": {
+          "authorization": {},
+          "claims": {
+            "http://schemas_xmlsoap_org/ws/2005/05/identity/claims/spn": "microsoft system"
+          }
+        },
+        "description": "Microsoft system deleted the 1190e086-37bb-4ce6-b4ca-950b49785e54 subscription.",
+        "category": "Security",
+        "event_category": "Administrative",
+        "properties": {
+          "message": "Microsoft system deleted the 1190e086-37bb-4ce6-b4ca-950b49785e54 subscription."
+        }
+      }
+    }
+  }
+]
